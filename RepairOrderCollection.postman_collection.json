@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "30c8887c-31e4-4cab-884a-2ffbf21a85e8",
+		"name": "RepairOrderCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createRepairOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"repairerName\"  : \"rachanas3\",\n  \"startDateTime\"  : \"2020-03-10 17:58:00\",\n  \"duration\" : \"00:02:00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/repair/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repair",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRepairOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repair/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repair",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRepairOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repair/order/10000200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repair",
+						"order",
+						"10000200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelRepairOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repair/order/10000200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repair",
+						"order",
+						"10000200"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,9 @@
+Steps to Run application.
+
+1. import project into eclipse / intellij as maven project.
+2. Open RepairOrderApplication.java class
+3. Run as Java application
+
+4. Download postman application.
+5. Import file -> repair-order/RepairOrderCollection.postman_collection.json into postman
+6. You will see collection with name "RepairOrderCollection" . You will see 4 APIs in there ready for testing.
